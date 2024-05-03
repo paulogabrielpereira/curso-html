@@ -46,7 +46,7 @@
     width: 68px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.279);
     overflow: hidden;
-    transition: width .3s ease, opacity .4s ease-out;
+    transition: width .3s ease, opacity .4s;
     position: fixed;
 }
 
@@ -54,6 +54,9 @@
     width: 200px;
 }
 
+#menu ul {
+    list-style: none;
+}
 
 #menu ul > li {
     display: flex;
@@ -65,11 +68,6 @@
     font-size: 1.2em;
 }
 
-#menu .rotated {
-    display: inline-block;
-    transform: rotate(45deg);
-}
-
 #menu .txt-link {
-    
+    text-decoration: none;
 }
