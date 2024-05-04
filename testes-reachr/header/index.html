@@ -6,6 +6,7 @@
     <title>Cabeçalho</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
     <header>
@@ -22,138 +23,200 @@
             </div>
         </div>
     </header>
-    <nav id="menu">
-        <ul>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-list"></i>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-border-all"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-person-circle"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-building-fill"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-bank"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-search"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-credit-card"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-chat-square"></i>
-                </span>
-                <span  class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-telephone-fill"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-            <li class="list-item">
-                <span class="icon">
-                    <i class="bi bi-play-circle"></i>
-                </span>
-                <span class="txt-link">
-                    <a href="#"></a>
-                </span>
-            </li>
-        </ul>
-    </nav>
-    <nav id="pages">
-        <div class="options">
+    <main id="container">
+        <nav id="menu">
             <ul>
-                <li class="page">
-                    <span class="page-icon">
-                        <i class="bi bi-folder2-open"></i>
-                    </span>
-                    <span class="page-txt">
-                        <a href="#">Cargo</a>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-list"></i>
                     </span>
                 </li>
-                <li class="page">
-                    <span class="page-icon">
-                        <i class="bi bi-briefcase-fill"></i>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-border-all"></i>
                     </span>
-                    <span class="page-txt">
-                        <a href="#">Empresa</a>
-                    </span>
-                </li>
-                <li class="page">
-                    <span class="page-icon">
-                        <i class="bi bi-graph-up"></i>
-                    </span>
-                    <span class="page-txt">
-                        <a href="#">Gestor</a>
+                    <span class="txt-link">
+                        <a href="#"></a>
                     </span>
                 </li>
-                <li class="page">
-                    <span class="page-icon">
-                        <i class="bi bi-inboxes-fill"></i>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-person-circle"></i>
                     </span>
-                    <span class="page-txt">
-                        <a href="#">Vaga</a>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-building-fill"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-bank"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-credit-card"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-chat-square"></i>
+                    </span>
+                    <span  class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
+                    </span>
+                </li>
+                <li class="list-item">
+                    <span class="icon">
+                        <i class="bi bi-play-circle"></i>
+                    </span>
+                    <span class="txt-link">
+                        <a href="#"></a>
                     </span>
                 </li>
             </ul>
-        </div>
-        <div class="open"></div>
-    </nav>
-    <main id="container">
-        <hgroup class="page-description">
-            <h1>EDITAR VAGA</h1>
-            <div class="subtitles">
-                <h2><strong>12345</strong> - Teste TI Reachr</h2>
-                <h3>Reachr Teste Novo <br> Cadastrado por: Leandro Tabata</h3>
+        </nav>
+        <nav id="pages">
+            <div class="options">
+                <ul>
+                    <li class="page">
+                        <span class="page-icon">
+                            <i class="bi bi-folder2-open"></i>
+                        </span>
+                        <span class="page-txt">
+                            <a href="#">Cargo</a>
+                        </span>
+                    </li>
+                    <li class="page">
+                        <span class="page-icon">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </span>
+                        <span class="page-txt">
+                            <a href="#">Empresa</a>
+                        </span>
+                    </li>
+                    <li class="page">
+                        <span class="page-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </span>
+                        <span class="page-txt">
+                            <a href="#">Gestor</a>
+                        </span>
+                    </li>
+                    <li class="page">
+                        <span class="page-icon">
+                            <i class="bi bi-inboxes-fill"></i>
+                        </span>
+                        <span class="page-txt">
+                            <a href="#">Vaga</a>
+                        </span>
+                    </li>
+                </ul>
             </div>
-        </hgroup>
-        <div class="buttons">
-            <a href="#" id="btn-back"><i class="bi bi-arrow-left"></i> Salvar e Voltar</a>
-           <a href="#" id="btn-next">Salvar e Avançar <i class="bi bi-arrow-right"></i></a>
-        </div>
+            <div class="open"></div>
+        </nav>
+        <section>
+            <hgroup class="page-description">
+                <h1>EDITAR VAGA</h1>
+                <div class="subtitles">
+                    <h2><strong>12345</strong> - Teste TI Reachr</h2>
+                    <h3>Reachr Teste Novo <br> Cadastrado por: Leandro Tabata</h3>
+                </div>
+            </hgroup>
+            <div class="buttons">
+                <a href="#" id="btn-back"><i class="bi bi-arrow-left"></i> Salvar e Voltar</a>
+                <h1 id="mq-title">Descrição da vaga</h1>
+                <a href="#" id="btn-next">Salvar e Avançar <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <h1 id="default-title">Descrição da vaga</h1>
+            <p id="form-details">
+                *Os campos em destaque são informações que serão publicadas para visualização do candidato
+            </p>
+            <form action="test.php" method="post" autocomplete="on">
+                <div class="talents-bank">
+                    <p>
+                        
+                    </p>
+                    <div id="on-off-form">
+
+                    </div>
+                </div>
+
+                <div class="form-data">
+                    <label for="ititulo">*Qual é o título do cargo da sua vaga?</label>
+                    <input type="text" name="titulo" id="ititulo" autocomplete="name" required>
+                </div>
+
+                <div class="form-data">
+                    <label for="iquant">*Quantidade de vagas abertas</label>
+                    <input type="number" name="quant" id="iquant" min="0" required>
+                </div>
+
+                <div class="form-data">
+                    <label for="itipo">*Tipo de vaga</label>
+                    <select name="tipo" id="itipo">
+                        <option></option>
+                        <option>Interna</option>
+                        <option>Externa</option>
+                    </select>
+                </div>
+
+                <div class="form-data">
+                    <label for="inumreq">Número da Requisição Sênior <span id="help">?</span></label>
+                    <input type="text" name="numreq" id="inumreq">
+                </div>
+
+                <fieldset>
+                    <legend>Selecione os campos abaixo para definir o Centro de custo da vaga</legend>
+                    
+                    <label for="iempresa">Departamento/Filial</label>
+                    <select name="empresa" id="iempresa">
+                        <option></option>
+                        <option>Matriz</option>
+                        <option>Filial</option>
+                    </select>
+
+                    <label for="idept">Departamento</label>
+                    <select name="dept" id="idept">
+                        <option></option>
+                        <option>Marketing</option>
+                        <option>RH</option>
+                        <option>Gestão</option>
+                    </select>
+
+
+                </fieldset>
+            </form>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

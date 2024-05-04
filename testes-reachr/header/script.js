@@ -7,5 +7,4 @@ window.onload = function() {
     menuOpen[0].addEventListener('click', function() {
         menuOptions[0].classList.toggle('exp');
     });
-    console.log(document.body)
-;};
+};
