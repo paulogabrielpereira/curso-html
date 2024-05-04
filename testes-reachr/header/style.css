@@ -1,7 +1,8 @@
 :root {
     --cor-fonte-padrao: #494b53;
     --cor-background-menu: #e6e7eb;
-    --fonte-padrao: ;
+    --cor-tela-principal: #f3f3f3;
+    --cor-padrao: #3d86f5;
 }
 
 * {
@@ -17,15 +18,33 @@ body, html {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.279);
+    border-bottom: 1px solid var(--cor-background-menu);
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
     box-sizing: border-box;
 }
 
-#top div {
+#top #right-header {
     display: flex;
+}
+
+#top #left-header {
+    background-color: transparent;
+    width: 60px;
+    margin: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--cor-background-menu);
+}
+
+#top #left-header #profile-img {
+    width: 40px;
+    height: 40px;
+    background: url('foto-teste.png') center center;
+    background-size: cover;
+    border-radius: 50%;
 }
 
 #top img {
@@ -66,10 +85,10 @@ body, html {
     width: 60px;
     display: inline-block;
     box-sizing: border-box;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .279);
+    border-right: 1px solid var(--cor-background-menu);
     position: fixed;
     margin-top: 61.6px;
-    z-index: 2;
+    z-index: 10;
 }
 
 #menu ul {
@@ -90,8 +109,8 @@ body, html {
     margin-top: 62.6px;
     display: inline-block;
     background-color: transparent;
-    border-radius: 0 10px 10px 0 ;
     position: fixed;
+    z-index: 9;
 }
 
 #pages ul {
@@ -126,14 +145,56 @@ body, html {
     width: 10px;
     background-image: linear-gradient(to right, var(--cor-background-menu), var(--cor-fonte-padrao));
     display: inline-block;
-    border-radius: 0 10px 10px 0;
     cursor: pointer;
 }
 
-.exp {
-    display: inline-block;
+#container {
+    float: right;
+    background-color: var(--cor-tela-principal);
+    display: block;
+    height: 90%;
+    width: 86%;
+    transform: translateY(62px);
 }
 
-.show {
-    background-color: var(--cor-background-menu);
+#container h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#container .page-description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px;
+    border-bottom: 1px solid var(--cor-fonte-padrao);
+}
+
+#container .page-description h2 {
+    font-size: 1em;
+}
+
+#container .page-description h3 {
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+#container .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+#container .buttons a {
+    background-color: var(--cor-padrao);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.buttons a .bi {
+    margin: 0 5px;
 }

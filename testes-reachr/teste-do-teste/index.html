@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Sidebar</title>
+    <style>
+        #container {
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(45deg, rgb(69, 69, 156), rgb(135, 97, 97));
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #content {
+            width: 50%;
+            height: 50%;
+            background-color: darkcyan;
+            display: none;
+        }
+
+        #btn-show {
+            width: 15%;
+            height: 10%;
+            background-color: blueviolet;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="content"></div>
+        <div id="btn-show">
+            Ejetar
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var content = document.getElementById('content');
+            var btnShow = document.getElementById('btn-show');
+            btnShow.addEventListener('click', function() {
+                content.style.display = 'flex';
+            });
+        };
+    </script>
+</body>
+</html>
