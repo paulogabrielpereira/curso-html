@@ -161,11 +161,9 @@
             <p id="form-details">
                 *Os campos em destaque são informações que serão publicadas para visualização do candidato
             </p>
-            <form action="test.php" method="post" autocomplete="on">
+            <form action="test.php" method="post" autocomplete="on" spellcheck="false">
                 <div class="talents-bank">
-                    <p>
-                        
-                    </p>
+                    <p></p>
                     <div id="on-off-form">
 
                     </div>
@@ -173,12 +171,12 @@
 
                 <div class="form-data">
                     <label for="ititulo">*Qual é o título do cargo da sua vaga?</label>
-                    <input type="text" name="titulo" id="ititulo" autocomplete="name" required>
+                    <input type="text" name="titulo" id="ititulo" autocomplete="name" required placeholder="Informe aqui">
                 </div>
 
                 <div class="form-data">
                     <label for="iquant">*Quantidade de vagas abertas</label>
-                    <input type="number" name="quant" id="iquant" min="0" required>
+                    <input type="number" name="quant" id="iquant" min="0" value="1" required>
                 </div>
 
                 <div class="form-data">
@@ -192,32 +190,104 @@
 
                 <div class="form-data">
                     <label for="inumreq">Número da Requisição Sênior <span id="help">?</span></label>
-                    <input type="text" name="numreq" id="inumreq">
+                    <input type="text" name="numreq" id="inumreq" placeholder="Informe aqui">
                 </div>
 
                 <fieldset>
                     <legend>Selecione os campos abaixo para definir o Centro de custo da vaga</legend>
                     
-                    <label for="iempresa">Departamento/Filial</label>
-                    <select name="empresa" id="iempresa">
-                        <option></option>
-                        <option>Matriz</option>
-                        <option>Filial</option>
-                    </select>
+                    <div class="form-data">
+                        <label for="iempresa">Empresa/Filial</label>
+                        <select name="empresa" id="iempresa">
+                            <option></option>
+                            <option>Matriz</option>
+                            <option>Filial</option>
+                        </select>
+                    </div>
 
-                    <label for="idept">Departamento</label>
-                    <select name="dept" id="idept">
-                        <option></option>
-                        <option>Marketing</option>
-                        <option>RH</option>
-                        <option>Gestão</option>
-                    </select>
+                    <div class="form-data">
+                        <label for="idept">Departamento</label>
+                        <select name="dept" id="idept">
+                            <option></option>
+                            <option>Marketing</option>
+                            <option>RH</option>
+                            <option>Gestão</option>
+                        </select>
+                    </div>
 
+                    <div class="form-data">
+                        <label for="isetor">Setor</label>
+                        <select name="setor" id="isetor">
+                            <option></option>
+                            <option>Setor A</option>
+                            <option>Setor B</option>
+                        </select>
+                    </div>
 
+                    <div class="form-data">
+                        <label for="icusto">Centro de custo</label>
+                        <input type="text" name="custo" id="icusto" placeholder="Informe aqui">
+                    </div>
+
+                    <div class="form-data">
+                        <label for="ireq">Número da Requisição</label>
+                        <input type="text" name="req" id="ireq" placeholder="Informe aqui">
+                    </div>
+
+                    <div class="form-data">
+                        <label for="ireqpai">Número da requisição Pai</label>
+                        <input type="text" name="reqpai" id="ireqpai" placeholder="Informe aqui">
+                    </div>
+
+                    <div class="form-data">
+                        <label for="iedoc">E-DOC</label>
+                        <input type="text" name="edoc" id="iedoc" placeholder="Informe aqui">
+                    </div>
                 </fieldset>
+
+                <div class="form-data">
+                    <label for="idesc">*Descrição da Vaga</label>
+                    <div id="textarea">
+                        <textarea name="desc" id="idesc" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-data">
+                    <label for="idesc">*Requisitos Obrigatórios</label>
+                    <div id="textarea">
+                        <textarea name="desc" id="idesc" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-data">
+                    <label for="itags">Tags (Competências)</label>
+                    <input type="text" name="tags" id="itags">
+                </div>
+
+                <div class="form-data">
+                    <label for="iarea">Área contratante</label>
+                    <input type="text" name="area" id="iarea" placeholder="Informe aqui">
+                </div>
+
+                <div class="form-data">
+                    <label for="iresp">Gestor responsável pela área</label>
+                    <input type="text" name="resp" id="iresp" placeholder="Informe aqui">
+                </div>
+
+                <div class="form-data">
+                    <label for="igestor">Cargo do Gestor</label>
+                    <input type="text" name="gestor" id="igestor" placeholder="Informe aqui">
+                </div>
+
+                <div class="form-data">
+                    <label for="iemail">E-mail de gestor</label>
+                    <input type="email" name="email" id="iemail"></div>
             </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; </p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
